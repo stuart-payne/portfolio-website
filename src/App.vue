@@ -1,28 +1,59 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <div class="background">
+      <div class="display elevation-10">
+        <div class="content">
+        </div>
+        <v-breadcrumbs dark :items="items"></v-breadcrumbs>
+      </div>
+    </div>
+
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+  },
+  data: () => ({
+    items: [
+      {
+        text: 'Dashboard',
+        disabled: false,
+        href: 'breadcrumbs_dashboard',
+      },
+      {
+        text: 'Link 1',
+        disabled: false,
+        href: 'breadcrumbs_link_1',
+      },
+      {
+        text: 'Link 2',
+        disabled: true,
+        href: 'breadcrumbs_link_2',
+      },
+    ]
+  }),
+};
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  .background {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(174, 124, 212);
+    justify-content: space-around;
+  }
+  .display {
+    background-color: rgb(39, 37, 41);
+    height: 675px;
+    width: 1200px;
+    margin: auto;
+  }
+  .content {
+    height: 92%;
+  }
 </style>
