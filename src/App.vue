@@ -2,9 +2,9 @@
   <v-app>
     <div class="background">
       <div class="display elevation-10">
-        <div class="content">
-        </div>
-        <v-breadcrumbs dark :items="items"></v-breadcrumbs>
+        <router-view class="content pa-5">
+        </router-view>
+        <v-breadcrumbs class="breadcrumb" dark :items="items"></v-breadcrumbs>
       </div>
     </div>
 
@@ -18,24 +18,12 @@ export default {
   components: {
   },
   data: () => ({
-    items: [
-      {
-        text: 'Dashboard',
-        disabled: false,
-        href: 'breadcrumbs_dashboard',
-      },
-      {
-        text: 'Link 1',
-        disabled: false,
-        href: 'breadcrumbs_link_1',
-      },
-      {
-        text: 'Link 2',
-        disabled: true,
-        href: 'breadcrumbs_link_2',
-      },
-    ]
   }),
+  computed: {
+    items:  function() {
+      return this.$breadcrumbs;
+    }
+  }
 };
 </script>
 
@@ -52,8 +40,14 @@ export default {
     height: 675px;
     width: 1200px;
     margin: auto;
+    color: white;
+    word-wrap:break-word;
   }
   .content {
     height: 92%;
+  }
+
+  .breadcrumb {
+    color: rgb(174, 124, 212);
   }
 </style>
