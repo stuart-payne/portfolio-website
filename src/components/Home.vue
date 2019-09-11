@@ -34,17 +34,44 @@
           </v-row>
       </div>
       <div class="column">
+          <project-card v-for="(item, index) in projectListFilter" 
+            :key="index" 
+            :img="item.img"
+            :title="item.title"
+            :description="item.description"
+            :to="item.to"></project-card>
       </div>
   </div>
 </template>
 
 <script>
 import SkillBar from './SkillBar.vue'
+import ProjectCard from './ProjectCard.vue'
 
 export default {
     
     components: {
-        SkillBar
+        SkillBar,
+        ProjectCard
+    },
+    data() {
+        return {
+            startIndex: 0,
+            endIndex: 4
+        }
+    },
+    computed: {
+        projectListFilter: function() {
+            return this.$projectList.filter((proj, ind) => 
+                ind >= this.startIndex || ind <= this.endIndex
+            )
+        },
+        projectList: function() {
+            return this.$projectList;
+        }
+    },
+    created() {
+        console.log(this.$projectList);
     }
 }
 </script>

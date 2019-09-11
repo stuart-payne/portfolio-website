@@ -2,29 +2,28 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import VueRouter from 'vue-router';
+import {projectList} from './projects.js';
 
 Vue.use(VueRouter);
 
 Vue.config.productionTip = false
 
 const Home = () => import('./components/Home.vue');
-const ProjectMenu = () => import('./components/ProjectMenu.vue');
-const ProjectView = () => import('./components/ProjectView.vue');
+const Test = () => import('./components/Test.vue');
 
 //router config
 
+Vue.prototype.$hack = false;
+
+var str = '';
+
+if(Vue.prototype.$hack) {
+  require('./assets/' + str + '.png');
+}
+
 const routes = [
   { path: '/', component: Home },
-  { path: '/projects', component: ProjectMenu},
-  {
-    path: '/project/:id',
-    component: ProjectView,
-    props: (route) => {
-      return {
-        project: route.params.id
-      };
-    }
-  },
+  { path: '/test', component: Test },
   { path: '*', redirect: '/' }
 ];
 
@@ -44,6 +43,8 @@ Vue.prototype.$breadcrumbs = [
     to: '/'
   }
 ]
+
+Vue.prototype.$projectList = projectList;
 
 
 new Vue({
