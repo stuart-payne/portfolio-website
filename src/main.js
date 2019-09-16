@@ -10,20 +10,18 @@ Vue.config.productionTip = false
 
 const Home = () => import('./components/Home.vue');
 const Test = () => import('./components/Test.vue');
+const Website = () => import('./components/Website.vue');
+const Weather = () => import('./components/Weather.vue');
+const Blog = () => import('./components/Blog.vue');
 
 //router config
-
-Vue.prototype.$hack = false;
-
-var str = '';
-
-if(Vue.prototype.$hack) {
-  require('./assets/' + str + '.png');
-}
 
 const routes = [
   { path: '/', component: Home },
   { path: '/test', component: Test },
+  { path: '/website', component: Website },
+  { path: '/beather', component: Weather },
+  { path: '/blog', component: Blog },
   { path: '*', redirect: '/' }
 ];
 

@@ -50,4 +50,7 @@ export default {
   .breadcrumb {
     color: rgb(174, 124, 212);
   }
+  .smallT {
+    font-size: 8px;
+  }
 </style>

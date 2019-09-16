@@ -8,19 +8,19 @@
                   </v-avatar>
               </v-col>
               <v-col cols="9">
-                  <h1>Stuart Payne</h1>
-                  <p>Software Developer</p>
-                  <p>Portfolio website for an ambitious developer looking for his break in the software industry</p>
+                  <h1 class="accent--text">Stuart Payne</h1>
+                  <p class="ml-1">Software Developer</p>
+                  <p class="body-2 ml-1">Portfolio website for an ambitious developer looking for his break in the software industry</p>
               </v-col>
           </v-row>
-          <v-row class="column-item">
+          <v-row class="column-item smallT">
               <p>Hi! I'm a 27 year old self-taught software developer from the UK. I have been programming for over 2 years. 
                   The work I've done has mostly revolved Javascript in both Front-End development with Vue.js and backend with Node.
                   I have also dabbled in game development through Unity and C# with some Lua thrown in.</p>
           </v-row>
           <v-row class="column-item">
               <v-col cols="2">
-                <h3>Skills</h3>
+                <h3 class="accent--text">Skills</h3>
               </v-col>
               <v-col cols="8">
                   <SkillBar title="JavaScript" percent="100"/>
@@ -34,6 +34,7 @@
           </v-row>
       </div>
       <div class="column">
+          <h1 class="mt-3 accent--text">Projects</h1>
           <project-card v-for="(item, index) in projectListFilter" 
             :key="index" 
             :img="item.img"
@@ -48,6 +49,7 @@
 import SkillBar from './SkillBar.vue'
 import ProjectCard from './ProjectCard.vue'
 
+
 export default {
     
     components: {
@@ -57,7 +59,7 @@ export default {
     data() {
         return {
             startIndex: 0,
-            endIndex: 4
+            endIndex: 3
         }
     },
     computed: {
@@ -80,6 +82,7 @@ export default {
     .column {
         height: 100%;
         width: 50%;
+        margin: 0px 10px;
     }
 
     .columnContainer {
