@@ -19,7 +19,7 @@ const projectList = [
     },
     {
         title: 'Mock Blog Website',
-        description: 'A mock website with the intent of implementing a login system with the some of the security required. Furthermore, database management for the blgo entries was also a goal of this project',
+        description: 'A mock website with the intent of implementing a login system with the some of the security required.',
         img: 'logo',
         to: '/blog'
     }

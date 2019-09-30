@@ -2,8 +2,8 @@
   <v-app>
     <div class="background">
       <div class="display elevation-10">
-        <router-view class="content pa-5">
-        </router-view>
+        <home class="ma-5"></home>
+        <router-view class="router"></router-view>
         <v-breadcrumbs class="breadcrumb" dark :items="items"></v-breadcrumbs>
       </div>
     </div>
@@ -13,9 +13,12 @@
 
 <script>
 
+import Home from './components/Home.vue'
+
 export default {
   name: 'App',
   components: {
+    Home
   },
   data: () => ({
   }),
@@ -37,8 +40,7 @@ export default {
   }
   .display {
     background-color: rgb(39, 37, 41);
-    height: 675px;
-    width: 1200px;
+    width: 1152px;
     margin: auto;
     color: white;
     word-wrap:break-word;
@@ -52,5 +54,11 @@ export default {
   }
   .smallT {
     font-size: 8px;
+  }
+
+  
+  .router {
+      max-width: 700px;
+      margin: auto;
   }
 </style>

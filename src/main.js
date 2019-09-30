@@ -17,12 +17,12 @@ const Blog = () => import('./components/Blog.vue');
 //router config
 
 const routes = [
-  { path: '/', component: Home },
+  { path: '/home', component: Home },
   { path: '/test', component: Test },
   { path: '/website', component: Website },
-  { path: '/beather', component: Weather },
+  { path: '/weather', component: Weather },
   { path: '/blog', component: Blog },
-  { path: '*', redirect: '/' }
+  // { path: '*', redirect: '/' }
 ];
 
 const router = new VueRouter({
