@@ -1,10 +1,28 @@
 <template>
   <div>
-    <h2>Website</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+    <h2>Portfolio Website</h2>
+    <p>
+      I needed a website to serve as a quick and concise access point for the projects which I have undertaken; 
+      allowing for people interested in my work to find it easily. The requirements for it were for it to be simple,
+      for the projects to be easily found and to serve as an advertisement for my own skills.
+    </p>
+    <p>
+      I chose to use <b>Vue</b> as the framework, mainly due to familiarity with it. Having done several other projects wuth Vue
+      already, there would be little for me to learn when unergoing the construction of this website. Why use a framework at all?
+      Because I want to make it as easy as possible to add further projects that I do in the future. With the templating that 
+      comes with Vue as well as the routing, the ability to add to the website is simlpe and will allow for minimal maintenance after 
+      it is deployed.
+    </p>
+    <p>
+      For the styling, <b>Vuetify</b> was chosen. The reasoning was to limit the amount of time styling so out-of-the-box functionality 
+      that Vuetify offers was a good fit. Even when not using the Vuetify components, the helper classes that are provided are 
+      useful, an example as the margin and padding classes, giving a helpful shorthand for common uses.
+    </p>
+    <p>
+      Design-wise, with the requirement of quick access to my portfolio, I wanted all my information to be displayed on a single screen.
+      Scrolling for information is to be avoided. I chose the idea of displaying the information in the form of an elaborate business
+      card. 
+    </p>
   </div>
 </template>
 

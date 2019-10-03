@@ -108,7 +108,4 @@ export default {
         flex-direction: row;
     }
 
-    .router {
-        max-width: 600px;
-    }
 </style>

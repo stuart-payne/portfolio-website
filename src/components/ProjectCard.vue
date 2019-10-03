@@ -1,8 +1,5 @@
 <template>
   <div class="project pa-2"
-    :class="{'elevation-6': isHovered}"
-    @mouseover="isHovered = true"
-    @mouseleave="isHovered = false" 
     @click="onClick">
       <v-avatar class="mr-2"
         tile
@@ -43,5 +40,11 @@ export default {
         display: flex;
         width: 100%;
         margin-top: 5px;
+        border: 2px solid #64b5f6;
+        border-radius: 6px;
+    }
+
+    .project:hover {
+        background-color: #64b5f6 ;
     }
 </style>
