@@ -1,13 +1,7 @@
 const projectList = [
     {
-        title: 'Test',
-        description: 'Lorem Ipsum blah blah blah blah',
-        img: 'logo',
-        to: '/test'
-    },
-    {
         title: 'This Website!',
-        description: 'Lorem Ipsum blah blah blah blah',
+        description: 'The thought process and tech that was used to create the website you are currently viewing.',
         img: 'websitethumb',
         to: '/website'
     },
@@ -22,6 +16,12 @@ const projectList = [
         description: 'A mock website with the intent of implementing a login system with the some of the security required.',
         img: 'blogthumb',
         to: '/blog'
+    },
+    {
+        title: 'Zelda Clone',
+        description: 'A basic demo game made in Unity inspired by the classic Zelda franchise',
+        img: 'zeldathumb',
+        to: '/zelda'
     }
 ]
 

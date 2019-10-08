@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h2>Portfolio Website</h2>
+  <div class="projView">
+    <h2 class="mb-4 accent--text">Portfolio Website</h2>
     <p>
       I needed a website to serve as a quick and concise access point for the projects which I have undertaken; 
       allowing for people interested in my work to find it easily. The requirements for it were for it to be simple,
@@ -23,6 +23,14 @@
       Scrolling for information is to be avoided. I chose the idea of displaying the information in the form of an elaborate business
       card. 
     </p>
+    <p>
+      The site is an SPA. The main page is simply the card and the router view. Each page, including the home page is a component that is 
+      accessed through vue-router. 
+    </p>
+    <div class="imgDisplay">
+      <img :src="require('../assets/codeSnippets/routing.png')"/>
+      <p class="imgCap">The code used for the configuration of the Vue router</p>
+    </div>
   </div>
 </template>
 

@@ -2,8 +2,8 @@
   <v-app>
     <div class="background">
       <div class="display elevation-10">
-        <home class="ma-5"></home>
-        <router-view class="router"></router-view>
+        <!-- <home class="ma-5"></home> -->
+        <router-view></router-view>
         <v-breadcrumbs class="breadcrumb" dark :items="items"></v-breadcrumbs>
       </div>
     </div>
@@ -13,15 +13,8 @@
 
 <script>
 
-import Home from './components/Home.vue'
-
 export default {
   name: 'App',
-  components: {
-    Home
-  },
-  data: () => ({
-  }),
   computed: {
     items:  function() {
       return this.$breadcrumbs;

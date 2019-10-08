@@ -21,13 +21,13 @@
                 <h2 class="accent--text">Skills</h2>
               </v-col>
               <v-col cols="8">
-                  <SkillBar title="JavaScript" percent="100"/>
-                  <SkillBar title="Vue" percent="80"/>
-                  <SkillBar title="Node" percent="80"/>
-                  <SkillBar title="C#" percent="60"/>
-                  <SkillBar title="HTML" percent="60"/>
-                  <SkillBar title="CSS" percent="50"/>
-                  <SkillBar title="Lua" percent="40"/>
+                  <skill-bar title="JavaScript" percent="100"/>
+                  <skill-bar title="Vue" percent="80"/>
+                  <skill-bar title="Node" percent="80"/>
+                  <skill-bar title="C#" percent="60"/>
+                  <skill-bar title="HTML" percent="60"/>
+                  <skill-bar title="CSS" percent="50"/>
+                  <skill-bar title="Lua" percent="40"/>
               </v-col>
           </v-row>
       </div>
@@ -86,10 +86,11 @@ export default {
     .column {
         height: 100%;
         max-width: 530px;
-        margin: 0px 10px;
+        margin: 0px 0px;
     }
 
     .columnContainer {
+        margin: 20px 20px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;

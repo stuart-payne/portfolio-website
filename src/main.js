@@ -3,6 +3,7 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import VueRouter from 'vue-router';
 import {projectList} from './projects.js';
+import './assets/css/global.css';
 
 Vue.use(VueRouter);
 
@@ -13,16 +14,18 @@ const Test = () => import('./components/Test.vue');
 const Website = () => import('./components/Website.vue');
 const Weather = () => import('./components/Weather.vue');
 const Blog = () => import('./components/Blog.vue');
+const Zelda = () => import('./components/Zelda.vue');
 
 //router config
 
 const routes = [
-  { path: '/home', component: Home },
+  { path: '/', component: Home },
   { path: '/test', component: Test },
   { path: '/website', component: Website },
   { path: '/weather', component: Weather },
   { path: '/blog', component: Blog },
-  // { path: '*', redirect: '/' }
+  { path: '/zelda', component: Zelda },
+  { path: '*', redirect: '/' }
 ];
 
 const router = new VueRouter({
