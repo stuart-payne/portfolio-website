@@ -1,0 +1,17 @@
+.projView {     
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imgDisplay {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.imgCap {
+    font-size: 12px;
+    font-style: italic;
+}
