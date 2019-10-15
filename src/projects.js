@@ -7,19 +7,19 @@ const projectList = [
     },
     {
         title: 'Weather Finder',
-        description: 'A simple app that finds the weather for either a location supplied form the user or from the browser\'s geolocation',
+        description: 'A simple app that finds the weather for either a location supplied from the user or from the browser\'s geolocation',
         img: 'weatherthumb',
         to: '/weather'
     },
     {
-        title: 'Mock Blog Website',
-        description: 'A mock website with the intent of implementing a login system with the some of the security required.',
+        title: 'Authentication with JWT',
+        description: 'Using JSON web tokens to authenticate a basic blog website for submitting blog posts.',
         img: 'blogthumb',
         to: '/blog'
     },
     {
-        title: 'Zelda Clone',
-        description: 'A basic demo game made in Unity inspired by the classic Zelda franchise',
+        title: 'Animating Sprites',
+        description: 'Animating a 2D sprites in Unity within a Zelda-esque clone.',
         img: 'zeldathumb',
         to: '/zelda'
     }
