@@ -39,7 +39,7 @@ Vue.use(router);
 
 Vue.prototype.$breadcrumbs = [
   {
-    text: 'Home',
+    text: 'Back',
     disabled: false,
     to: '/'
   }

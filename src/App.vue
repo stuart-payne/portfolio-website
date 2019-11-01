@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <div class="background">
-      <div class="display elevation-10">
+      <div class="display elevation-10">    
+      <v-breadcrumbs v-if="notHome" class="breadcrumb" dark :items="items"></v-breadcrumbs>
         <!-- <home class="ma-5"></home> -->
         <router-view></router-view>
-        <v-breadcrumbs class="breadcrumb" dark :items="items"></v-breadcrumbs>
       </div>
     </div>
 
@@ -18,12 +18,19 @@ export default {
   computed: {
     items:  function() {
       return this.$breadcrumbs;
+    },
+    notHome: {
+      cache: false,
+      get: function() {
+        return this.$router.currentRoute.fullPath !== "/";
+      }
     }
   }
 };
 </script>
 
 <style scoped>
+
   .background {
     display: flex;
     height: 100%;
@@ -44,11 +51,12 @@ export default {
 
   .breadcrumb {
     color: rgb(174, 124, 212);
+    position: sticky;
+    top:0;
   }
   .smallT {
     font-size: 8px;
   }
-
   
   .router {
       max-width: 700px;
