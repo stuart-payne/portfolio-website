@@ -33,6 +33,7 @@
       </div>
       <div class="column">
           <h2 class="mt-3 accent--text">Projects</h2>
+          <v-btn @click="decrementInd()" :disabled="upButton">Up</v-btn>
           <project-card v-for="(item, index) in projectListFilter" 
             :key="index" 
             :img="item.img"
@@ -40,6 +41,8 @@
             :description="item.description"
             :to="item.to"
             ></project-card>
+            <v-btn @click="incrementInd()" :disabled="downButton">Down</v-btn>
+            <v-btn @click="test()">test</v-btn>
       </div>
   </div>
 </template>
@@ -59,16 +62,44 @@ export default {
         return {
             startIndex: 0,
             endIndex: 3,
+            amountDisplayed: 4,
+        }
+    },
+    methods: {
+        incrementInd() {
+            this.startIndex++;
+            this.endIndex++;
+        },
+        decrementInd() {
+            this.startIndex--;
+            this.endIndex--;
+        },
+        test() {
+            console.log(`downBool: ${this.downButton}, endIndex: ${this.endIndex}, lenght: ${this.$projectList.length}`);
         }
     },
     computed: {
-        projectListFilter: function() {
+        projectListFilter: { 
+            get: function() {
             return this.$projectList.filter((proj, ind) => 
-                ind >= this.startIndex || ind <= this.endIndex
-            )
+                ind >= this.startIndex && ind <= this.endIndex
+            )},
+            cache: false
         },
         projectList: function() {
             return this.$projectList;
+        },
+        downButton: {
+            cache: false,
+            get: function() {
+                return this.endIndex + 1 >= this.$projectList.length; 
+            }
+        },
+        upButton: {
+            cache: false,
+            get: function() {
+                return this.startIndex == 0;
+            }
         }
     }
 }

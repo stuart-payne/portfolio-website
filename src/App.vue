@@ -53,6 +53,8 @@ export default {
     color: rgb(174, 124, 212);
     position: sticky;
     top:0;
+    background-color: rgb(39, 37, 41);
+    border-bottom: 2px white solid;
   }
   .smallT {
     font-size: 8px;
