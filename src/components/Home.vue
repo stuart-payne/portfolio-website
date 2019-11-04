@@ -1,7 +1,7 @@
 <template>
   <div class="columnContainer">
       <div class="column">
-          <div class="column-item flex">
+          <div class="column-item flex border">
                   <v-avatar class="mr-1" size="128">
                       <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"></v-img>
                   </v-avatar>
@@ -11,8 +11,9 @@
                     <p class="body-2 ml-1">Portfolio website for an ambitious developer looking for his break in the software industry</p>
                   </div>
           </div>
-          <v-row class="column-item smallT">
-              <p>Hi! I'm a 27 year old self-taught software developer from the UK. I have been programming for over 2 years. 
+          <h2 class="accent--text ml-3 my-1">Bio</h2>
+          <v-row class="column-item smallT border">
+              <p class="pa-1">Hi! I'm a 27 year old self-taught software developer from the UK. I have been programming for over 2 years. 
                   The work I've done has mostly revolved Javascript in both Front-End development with Vue.js and backend with Node.
                   I have also dabbled in game development through Unity and C# with some Lua thrown in.</p>
           </v-row>
@@ -33,7 +34,11 @@
       </div>
       <div class="column">
           <h2 class="mt-3 accent--text">Projects</h2>
-          <v-btn @click="decrementInd()" :disabled="upButton">Up</v-btn>
+          <div class="btn-center">
+            <v-btn text icon color="white" @click="decrementInd()" :disabled="upButton">
+                <v-icon>mdi-menu-up</v-icon>
+            </v-btn>
+          </div>
           <project-card v-for="(item, index) in projectListFilter" 
             :key="index" 
             :img="item.img"
@@ -41,8 +46,11 @@
             :description="item.description"
             :to="item.to"
             ></project-card>
-            <v-btn @click="incrementInd()" :disabled="downButton">Down</v-btn>
-            <v-btn @click="test()">test</v-btn>
+            <div class="btn-center">
+                <v-btn text icon color="white" @click="incrementInd()" :disabled="downButton">
+                    <v-icon>mdi-menu-down</v-icon>
+                </v-btn>
+            </div>
       </div>
   </div>
 </template>
@@ -73,9 +81,6 @@ export default {
         decrementInd() {
             this.startIndex--;
             this.endIndex--;
-        },
-        test() {
-            console.log(`downBool: ${this.downButton}, endIndex: ${this.endIndex}, lenght: ${this.$projectList.length}`);
         }
     },
     computed: {
@@ -138,6 +143,15 @@ export default {
         align-items: flex-start;
         flex-wrap: nowrap;
         flex-direction: row;
+    }
+
+    .btn-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .border {
+        border-bottom: 2px solid #64b5f6;
     }
 
 </style>
