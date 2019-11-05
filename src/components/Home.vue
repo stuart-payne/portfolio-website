@@ -2,7 +2,7 @@
   <div class="columnContainer">
       <div class="column">
           <div class="column-item flex border">
-                  <v-avatar class="mr-1" size="128">
+                  <v-avatar class="mr-2" size="128">
                       <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"></v-img>
                   </v-avatar>
                   <div class="ml-1">

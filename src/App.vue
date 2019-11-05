@@ -35,7 +35,7 @@ export default {
     display: flex;
     height: 100%;
     width: 100%;
-    background-color: rgb(67, 71, 78);
+    background-color: rgb(21, 22, 26);
     justify-content: space-around;
   }
   .display {
