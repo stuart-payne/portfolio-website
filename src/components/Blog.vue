@@ -1,6 +1,7 @@
 <template>
   <div class="projView">
     <h2 class="accent--text mb-2">Authentication with JWT</h2>
+    <p>Github here: <a href="https://github.com/stuart-payne/mock-blog-website"></a></p>
     <p>
       The goal of this project is to maintain a login session with a mock blog website where the authentication uses a JSON web token.
       We will be using mongoDB to store user login information, Vue for the website, hapi.js for the server and crypto.js for the 

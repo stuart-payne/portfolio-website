@@ -33,7 +33,10 @@
           </v-row>
       </div>
       <div class="column">
-          <h2 class="mt-3 accent--text">Projects</h2>
+          <div class="projFlex">
+            <h2 class="mt-3 accent--text">Projects</h2>
+            <a href="https://github.com/stuart-payne"><v-icon class="mt-3" large color="white">mdi-github-circle</v-icon></a>
+          </div>
           <div class="btn-center">
             <v-btn text icon color="white" @click="decrementInd()" :disabled="upButton">
                 <v-icon>mdi-menu-up</v-icon>
@@ -152,6 +155,11 @@ export default {
 
     .border {
         border-bottom: 2px solid #64b5f6;
+    }
+
+    .projFlex {
+        display: flex;
+        justify-content: space-between;
     }
 
 </style>

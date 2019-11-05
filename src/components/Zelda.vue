@@ -1,6 +1,7 @@
 <template>
   <div class="projView">
       <h2 class="mb-4 accent--text">Animating Sprites</h2>
+      <p>Github link: <a href="https://github.com/stuart-payne/mock-blog-website">mock-blog-website</a></p>
       <p> 
         The goal of this project is to animate two characters in a simple 2D sprite based game using Unity. There are two characters that covered in this
         article. The player character and a "boss" enemy.

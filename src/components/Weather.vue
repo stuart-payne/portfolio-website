@@ -2,7 +2,7 @@
   <div class="projView">
     <h2 class="accent--text">Weather Finder</h2>
     <p>
-      Full code here: <a>link will go here</a>
+      Full code here: <a href="https://github.com/stuart-payne/weather-app">weather-app</a> & <a href="https://github.com/stuart-payne/weather-app-site">server</a>
     </p>
     <p>
       The goal of this mini project was to create a simple website that requests data from an external API based on user input.

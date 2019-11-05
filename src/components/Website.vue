@@ -1,7 +1,7 @@
 <template>
   <div class="projView">
     <h2 class="mb-4 accent--text">Portfolio Website</h2>
-    <p><b>Github here: </b><a>link will be here</a></p>
+    <p><b>Github here: </b><a href="https://github.com/stuart-payne/portfolio-website">portfolio-website</a></p>
     <p>
       I needed a website to serve as a quick and concise access point for the projects which I have undertaken; 
       allowing for people interested in my work to find it easily. The requirements for it were for it to be simple,
