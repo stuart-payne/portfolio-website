@@ -1,6 +1,6 @@
 <template>
   <div class="columnContainer">
-      <div class="column">
+      <div class="column mr-4">
           <div class="column-item flex border">
                   <v-avatar class="mr-2" size="128">
                       <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"></v-img>
@@ -13,7 +13,7 @@
           </div>
           <h2 class="accent--text ml-3 my-1">Bio</h2>
           <v-row class="column-item smallT border">
-              <p class="pa-1">Hi! I'm a 27 year old self-taught software developer from the UK. I have been programming for over 2 years. 
+              <p class="pa-1">I'm a 27 year old Environmental Science graduate who is a self-taught software developer from the UK. I have been programming for over 2 years. 
                   The work I've done has mostly revolved Javascript in both Front-End development with Vue.js and backend with Node.
                   I have also dabbled in game development through Unity and C# with some Lua thrown in.</p>
           </v-row>
@@ -32,7 +32,7 @@
               </v-col>
           </v-row>
       </div>
-      <div class="column">
+      <div class="column ml-4">
           <div class="projFlex">
             <h2 class="mt-3 accent--text">Projects</h2>
             <a href="https://github.com/stuart-payne"><v-icon class="mt-3" large color="white">mdi-github-circle</v-icon></a>
@@ -133,7 +133,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .column-item {

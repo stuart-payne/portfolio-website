@@ -2,7 +2,12 @@
   <v-app>
     <div class="background">
       <div class="display elevation-10">    
-      <v-breadcrumbs v-if="notHome" class="breadcrumb" dark :items="items"></v-breadcrumbs>
+      <!-- <v-breadcrumbs v-if="notHome" class="breadcrumb" dark :items="items"></v-breadcrumbs> -->
+      <div class="breadcrumb"
+      v-if="notHome">
+        <v-btn class="mt-3 ml-3 accent--text" color="rgb(39, 37, 41)" outlined to="/"><v-icon large>mdi-arrow-left-bold</v-icon>Back</v-btn>
+        <a href="https://github.com/stuart-payne"><v-icon class="mt-3 mr-3" large color="white">mdi-github-circle</v-icon></a>
+      </div>
         <!-- <home class="ma-5"></home> -->
         <router-view></router-view>
       </div>
@@ -49,12 +54,20 @@ export default {
     height: 92%;
   }
 
+  .btn {
+    color: rgb(39, 37, 41);
+  }
+
   .breadcrumb {
     color: rgb(174, 124, 212);
     position: sticky;
+    display: flex;
+    justify-content: space-between;
     top:0;
     background-color: rgb(39, 37, 41);
     border-bottom: 2px white solid;
+    width: 100%;
+    height: 60px;
   }
   .smallT {
     font-size: 8px;
