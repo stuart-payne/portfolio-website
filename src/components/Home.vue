@@ -12,13 +12,13 @@
                   </div>
           </div>
           <h2 class="accent--text ml-3 my-1">Bio</h2>
-          <v-row class="column-item smallT border">
+          <div class="column-item smallT border">
               <p class="pa-1">I'm a 28 year old Environmental Science graduate who is a self-taught software developer from the UK. I have been programming for over 2 years. 
                   The work I've done has mostly revolved Javascript in both Front-End development with Vue.js and backend with Node.
                   I have also dabbled in game development through Unity and C# with some Lua thrown in.</p>
-          </v-row>
-          <v-row class="column-item mt-1">
-              <div class="flex">
+          </div>
+          <div class="column-item mt-1">
+              <div class="flex wd-100">
                 <div class="mr-2">
                     <h2 class="accent--text">Skills</h2>
                 </div>
@@ -32,7 +32,7 @@
                     <skill-bar title="Lua" percent="40"/>
                 </div>
               </div>
-          </v-row>
+          </div>
       </div>
       <div class="column ml-4">
           <div class="projFlex">
@@ -152,6 +152,10 @@ export default {
         align-items: flex-start;
         flex-wrap: wrap;
         flex-direction: row;
+    }
+
+    .wd-100 {
+        width: 100%;
     }
 
     .btn-center {
