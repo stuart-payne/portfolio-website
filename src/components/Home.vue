@@ -2,34 +2,36 @@
   <div class="columnContainer">
       <div class="column mr-4">
           <div class="column-item flex border">
-                  <v-avatar class="mr-2" size="128">
+                  <!-- <v-avatar class="mr-2" size="128">
                       <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"></v-img>
-                  </v-avatar>
+                  </v-avatar> -->
                   <div class="ml-1">
                     <h1 class="accent--text">Stuart Payne</h1>
-                    <p class="ml-1">Software Developer</p>
-                    <p class="body-2 ml-1">Portfolio website for an ambitious developer looking for his break in the software industry</p>
+                    <p >Software Developer</p>
+                    <!-- <p class="body-2 ml-1">Portfolio website for an ambitious developer looking for his break in the software industry</p> -->
                   </div>
           </div>
           <h2 class="accent--text ml-3 my-1">Bio</h2>
           <v-row class="column-item smallT border">
-              <p class="pa-1">I'm a 27 year old Environmental Science graduate who is a self-taught software developer from the UK. I have been programming for over 2 years. 
+              <p class="pa-1">I'm a 28 year old Environmental Science graduate who is a self-taught software developer from the UK. I have been programming for over 2 years. 
                   The work I've done has mostly revolved Javascript in both Front-End development with Vue.js and backend with Node.
                   I have also dabbled in game development through Unity and C# with some Lua thrown in.</p>
           </v-row>
-          <v-row class="column-item">
-              <v-col cols="2">
-                <h2 class="accent--text">Skills</h2>
-              </v-col>
-              <v-col cols="8">
-                  <skill-bar title="JavaScript" percent="100"/>
-                  <skill-bar title="Vue" percent="80"/>
-                  <skill-bar title="Node" percent="80"/>
-                  <skill-bar title="C#" percent="60"/>
-                  <skill-bar title="HTML" percent="60"/>
-                  <skill-bar title="CSS" percent="50"/>
-                  <skill-bar title="Lua" percent="40"/>
-              </v-col>
+          <v-row class="column-item mt-1">
+              <div class="flex">
+                <div class="mr-2">
+                    <h2 class="accent--text">Skills</h2>
+                </div>
+                <div class="skillContainer pa-2">
+                    <skill-bar title="JavaScript" percent="100"/>
+                    <skill-bar title="Vue" percent="80"/>
+                    <skill-bar title="Node" percent="80"/>
+                    <skill-bar title="C#" percent="60"/>
+                    <skill-bar title="HTML" percent="60"/>
+                    <skill-bar title="CSS" percent="50"/>
+                    <skill-bar title="Lua" percent="40"/>
+                </div>
+              </div>
           </v-row>
       </div>
       <div class="column ml-4">
@@ -141,10 +143,14 @@ export default {
         margin-right: 10px;
     }
 
+    .skillContainer {
+        width: 70%;
+    }
+
     .flex {
         display: flex;
         align-items: flex-start;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         flex-direction: row;
     }
 

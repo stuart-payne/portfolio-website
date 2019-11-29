@@ -22,12 +22,6 @@ const projectList = [
         description: 'Animating a 2D sprites in Unity within a Zelda-esque clone.',
         img: 'zeldathumb',
         to: '/zelda'
-    },
-    {
-        title: 'Test',
-        description: 'Test',
-        img: "zeldathumb",
-        to: '/zelda'
     }
 ]
 

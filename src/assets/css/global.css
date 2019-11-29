@@ -20,13 +20,13 @@
 
 @media screen and (max-width: 500px) {
     .projView {
-        max-width: 450px;
+        max-width: 320px;
     }
     .imgDisplay {
-        max-width: 450px;
+        max-width: 320px;
     }
 
     img {
-        max-width: 450px;
+        max-width: 320px;
     }
 }
