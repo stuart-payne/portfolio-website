@@ -14,8 +14,8 @@
           <h2 class="accent--text ml-3 my-1">Bio</h2>
           <div class="column-item smallT border">
               <p class="pa-1">I'm a 28 year old Environmental Science graduate who is a self-taught software developer from the UK. I have been programming for over 2 years. 
-                  The work I've done has mostly revolved Javascript in both Front-End development with Vue.js and backend with Node.
-                  I have also dabbled in game development through Unity and C# with some Lua thrown in.</p>
+                  The technologies I have experience working with include JS and Vue for front-end with Node and Laravel for back-end. I have also dabbled in game development through Unity 
+                  and C# with some Lua thrown in. In the future I want to focus more on back-end technologies as that is where my interest lies.</p>
           </div>
           <div class="column-item mt-1">
               <div class="flex wd-100">
@@ -27,8 +27,8 @@
                     <skill-bar title="Vue" percent="80"/>
                     <skill-bar title="Node" percent="80"/>
                     <skill-bar title="C#" percent="60"/>
-                    <skill-bar title="HTML" percent="60"/>
-                    <skill-bar title="CSS" percent="50"/>
+                    <skill-bar title="Laravel" percent="60"/>
+                    <skill-bar title="PHP" percent="50"/>
                     <skill-bar title="Lua" percent="40"/>
                 </div>
               </div>

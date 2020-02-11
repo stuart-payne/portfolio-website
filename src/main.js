@@ -15,6 +15,8 @@ const Website = () => import('./components/Website.vue');
 const Weather = () => import('./components/Weather.vue');
 const Blog = () => import('./components/Blog.vue');
 const Zelda = () => import('./components/Zelda.vue');
+const Graphqljs = () => import('./components/GraphQLjs.vue');
+const LaravelBlog = () => import('./components/LaravelBlog.vue');
 
 //router config
 
@@ -25,6 +27,8 @@ const routes = [
   { path: '/weather', component: Weather },
   { path: '/blog', component: Blog },
   { path: '/zelda', component: Zelda },
+  { path: '/graphqljs', component: Graphqljs },
+  { path: '/laravelblog', component: LaravelBlog },
   { path: '*', redirect: '/' }
 ];
 
@@ -45,7 +49,7 @@ Vue.prototype.$breadcrumbs = [
   }
 ]
 
-Vue.prototype.$projectList = projectList;
+Vue.prototype.$projectList = projectList.reverse();
 
 
 new Vue({

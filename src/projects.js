@@ -22,6 +22,18 @@ const projectList = [
         description: 'Animating a 2D sprites in Unity within a Zelda-esque clone.',
         img: 'zeldathumb',
         to: '/zelda'
+    },
+    {
+        title: 'Laravel Blog Site',
+        description: 'Building a blog site with basic functionality with Laravel',
+        img: 'laravelblogthumb',
+        to: '/laravelblog'
+    },
+    {
+        title: 'Basic GraphQL with Express',
+        description: 'Introduction to GraphQL using express to build a small server',
+        img: 'graphqlthumb',
+        to: '/graphqljs'
     }
 ]
 
