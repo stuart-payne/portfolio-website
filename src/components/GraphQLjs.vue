@@ -4,6 +4,10 @@
         <p>
         Full code here: <a href="https://github.com/stuart-payne/simple-graphql-js">github</a>
         </p>
+        <!-- intro -->
+        <!-- Query API -->
+        <!-- Resolvers -->
+        <!-- Example Queries -->
     </div>
 </template>
 
